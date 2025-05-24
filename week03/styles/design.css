@@ -1,0 +1,66 @@
+/* General Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+  background-color: #dbeafe; 
+  color: #111827; 
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #1e3a8a; 
+}
+
+/* Main layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* h2 spans both columns */
+main h2 {
+  color: navy;
+  text-align: left; 
+  grid-column: 1 / -1; 
+}
+
+/* Article content */
+article p {
+  text-align: justify;
+}
+
+/* List styling */
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Callout box */
+.callout {
+  grid-column: 1 / -1;
+  background-color: #f3e8ff;
+  color: #2d0b3a;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: smaller;
+  text-align: left;
+  padding: 1rem;
+}

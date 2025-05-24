@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nigeria by Christiana Nwachukwu">
+  <title>Country Page</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <main>
+    <h1>Nigeria</h1>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-large-nigeria.webp" media="(min-width:768px)">
+        <img src="images/hero-small-nigeria.webp" alt="Beautful landscapes of Nigeria" width="100%" height="auto">
+      </picture>
+    </div>
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 923,769 km/sq</li>
+        <li><strong>Population:</strong> Over 200 million</li>
+        <li><strong>Capital:</strong>Abuja</li>
+        <li><strong>Languages:</strong>English(official), Igbo, Hausa, Yoruba and others</li>
+        <li><strong>Currency:</strong>Nigerian Naira</li>
+        <li><strong>Time Zone:</strong>West Africa Time (UTC+1)</li>
+        <li><strong>Calling Code:</strong>+234</li>
+        <li><strong>Internet TLD:</strong>.ng</li>
+      </ul>
+    </section>
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="images/1530387_weather_morning_sun_sunrise_icon.svg" alt="Weather icon" width="64" height="64">
+      <p><strong>Temperature: </strong> 25°C</p>
+      <p><strong>Speed: </strong> 20 km/h</p>
+      <p><strong>Wind Chill: </strong> <span id="windchill">Calculating...</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentYear"></span> Christiana Nwachukwu. Last updated: <span id="lastModified"></span>.</p>
+  </footer>
+
+</body>
+</html>
