@@ -68,6 +68,7 @@ body {
 .data {
   top: 2rem;
   left: 2rem;
+  position: absolute;
 }
 
 .weather {
