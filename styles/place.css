@@ -5,7 +5,8 @@
   --nigeria-light-green: #90EE90;
   --nigeria-white: #ffffff;
   --nigeria-off-white: #f9f9f9;
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Ubuntu", sans-serif;
+  --font-body: "Roboto", sans-serif;
 }
 
 /* Reset and base styles */
@@ -16,7 +17,7 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-body);
   line-height: 1.6;
   background-color: var(--nigeria-off-white);
   color: var(--nigeria-dark-green);
@@ -28,6 +29,7 @@ body {
   margin-bottom: 1rem;
   text-align: center;
   color: var(--nigeria-dark-green);
+  font-family: var(--font-heading);
 }
 
 /* Hero Section */
@@ -119,12 +121,25 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 767px) {
+  .hero {
+    height: auto;
+  }
+  .hero img {
+    height: auto;
+  }
+  .data, .weather {
+    position: static;
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
 @media (min-width: 500px) {
   .page-title {
     font-size: 2.2rem;
   }
-  h1 ::after {
-    content: -My Fatherland;
+  h1::after {
+    content: "-My Fatherland";
     color: goldenrod;
     font-style: italic;
     font-size: 1rem;
