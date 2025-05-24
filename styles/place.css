@@ -66,9 +66,9 @@ body {
 }
 
 .data {
-  top: 2rem;
+  top: 5rem;
   left: 2rem;
-  position: absolute;
+  z-index: 2;
 }
 
 .weather {
