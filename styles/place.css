@@ -92,6 +92,16 @@ body {
 .weather-icon {
   font-size: 1.5rem;
 }
+.emoji {
+  display: none;
+}
+.mobile-weather-icon {
+  display: inline;
+}
+.weather-icon::after {
+  content: "";
+  display: none;
+}
 
 .data ul {
   list-style-type: none;
@@ -146,10 +156,21 @@ footer {
     font-size: 1rem;
   }
   @media (min-width: 768px) {
-    .weather h2::after{
+    .mobile-weather-icon {
+      display: none;
+    }
+    .weather-icon::after {
       content: "☀️";
       font-size: 1.5rem;
       margin-left: 0.5rem;
+    }
+    @media screen and (min-width: 768px) {
+      .emoji {
+        display: inline;
+      }
+      .svg-icon {
+        display: none;
+      }
     }
   }
 }
