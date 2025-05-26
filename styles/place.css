@@ -140,9 +140,16 @@ footer {
     font-size: 2.2rem;
   }
   h1::after {
-    content: "-My Fatherland";
+    content: "-My Fatherland ";
     color: goldenrod;
     font-style: italic;
     font-size: 1rem;
+  }
+  @media (min-width: 768px) {
+    .weather h2::after{
+      content: "☀️";
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
   }
 }
