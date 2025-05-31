@@ -25,6 +25,20 @@
   max-width: 1200px;
   margin: 0 auto;
  }
+ nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: inline-block;
+ }
+ nav a:hover,
+ nav a:focus,
+ nav a:focus-visible {
+  color: #fca311;
+  background-color: #e5e5e5;
+  text-decoration: underline;
+  outline: none;
+ }
  .navigation {
     display: none;
     flex-direction: column;
