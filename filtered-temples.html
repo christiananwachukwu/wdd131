@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://content.churchofjesuschrist.org https://churchofjesuschristtemples.org; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://content.churchofjesuschrist.org https://churchofjesuschristtemples.org data:;">
+  <meta name="description" content="A picture album of Church of Jesus LDS Temples around the world.">
+  <meta name="author" content="Christiana Nwachukwu">
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Toggle menu">☰</button>
+    <nav class="navigation">
+      <a href="#" title="Go to Home Page">Home</a>
+      <a href="#" title="Go to Old Page">Old</a>
+      <a href="#" title="Go to New Page">New</a>
+      <a href="#" title="Go to Large Page">Large</a>
+      <a href="#" title="Go to Small Page">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples Around the World</h1>
+    <div class="button-bar">
+        <button id="home">Home</button>
+        <button id="old">Old</button>
+        <button id="new">New</button>
+        <button id="large">Large</button>
+        <button id="small">Small</button>
+    </div>
+    <div id="Temples" class="temple-gallery"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Christiana Nwachukwu | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

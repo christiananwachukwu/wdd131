@@ -1,0 +1,119 @@
+ header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  position: relative;
+ }
+#menu {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffd700;
+ }
+ #menuTemples {
+  max-width: 1200px;
+  margin: 0 auto;
+ }
+ .navigation {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    display: block;
+  }
+  .navigation.show {
+    display: flex;
+  }
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+}
+footer p {
+  margin: 0.5rem 0;
+}
+ .temple-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1rem;
+   padding: 1rem;
+  }
+  .temple-gallery figure {
+    width: 400px;
+    height: auto;
+    margin: 0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  .temple-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    aspect-ratio: 16 / 10;
+  }
+  .temple-gallery figcaption {
+    padding: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .temple-card {
+    width: 330px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin: 1rem auto;
+  }
+  figure {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  main {
+    max-width: 1200px;
+    margin: auto;
+}
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  .navigation a {
+    padding: 0;
+  }
+  
+}
