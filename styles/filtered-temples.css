@@ -7,6 +7,12 @@
   color: white;
   position: relative;
  }
+ img {
+  height: auto;
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+ }
 #menu {
     display: block;
     font-size: 1.8rem;
