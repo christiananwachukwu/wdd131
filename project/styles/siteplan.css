@@ -1,0 +1,38 @@
+body {
+    font-family: Roboto, sans-;    
+    background-color: #ff6b81;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+header, h1, h2, h3 {
+     font-family: "Baloo Bhai 2" sans-serif;
+     color: #0047AB;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid #0047AB;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+section {
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003087;
+    color: white;
+    margin-top: 20px;
+}
