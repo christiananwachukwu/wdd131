@@ -1,0 +1,176 @@
+body {
+  font-family: Roboto, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #F5F5F5;
+}
+
+h1 {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #4A2C4A;
+  padding: 10px;
+  margin: -10px -10px 20px -10px;
+}
+
+form, fieldset {
+  background-color: #E0E0E0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: visible;
+}
+
+fieldset {
+  padding-top: 40px;
+  min-height: 200px;
+}
+
+fieldset legend {
+  font-weight: bold;
+  color: #4A2C4A;
+  padding: 0 5px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: #E0E0E0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #212122;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #B0BEC5;
+  border-radius: 4px;
+  background-color: white;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #F5F5F5;
+  color: #4A2C4A;
+  padding: 8px 20px;
+  border: 1px solid #B0BEC5;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #E0E0E0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #FFFFFF;
+  background-color: #4A2C4A;
+  padding: 10px;
+  margin: 20px -10px -10px -10px;
+}
+
+/* Star Rating Styling */
+.star-rating {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+}
+
+.rating-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-item label {
+  color: #6A4C6A;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.rating-item input[type="radio"] {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked + label,
+.star-rating input[type="radio"]:checked + label ~ label {
+  color: #FFD700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+}
+
+.rating-item label:hover,
+.rating-item label:hover ~ label {
+  color: #FFD700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+}
+
+/* Style for useful features checkboxes */
+fieldset p {
+  margin: 0 0 10px 0;
+  color: #2B1C2B;
+  font-size: 0.9rem;
+}
+
+fieldset .feature-group {
+  display: block; 
+  margin-bottom: 5px;
+}
+
+fieldset .feature-group input[type="checkbox"] {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0;
+}
+
+fieldset .feature-group label[for^="feature"] {
+  margin: 0;
+  color: #4A2C4A;
+  padding-left: 0;
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  form, fieldset {
+    padding: 10px;
+  }
+  .star-rating {
+    font-size: 1rem;
+  }
+  input[type="submit"] {
+    padding: 12px;
+    background-color: #4A2C4A;
+    color: #FFFFFF;
+  }
+  select, input, textarea {
+    font-size: 1rem;
+  }
+  fieldset .feature-group label[for^="feature"] {
+    display: block;
+    margin-right: 0;
+  }
+}
