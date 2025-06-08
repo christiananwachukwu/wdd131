@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Christiana Nwachukwu" />
-  <meta name="description" content="Product Review Form designed by Christiana Nwachukwu for WDD 131." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Christiana Nwachukwu">
+  <meta name="description" content="Product Review Form designed by Christiana Nwachukwu for WDD 131.">
   <title>Product Review Form</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/form.css" />
+  <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
   <h1>Product Review Form</h1>
@@ -50,20 +50,28 @@
     <input type="date" id="installationDate" name="installationDate" required  autocomplete="off" />
 
     <!-- Useful Features -->
-    <fieldset>
-      <legend>Useful Features</legend>
-      <p>Which features did you find useful in the product? (Click all that apply)</p>
-      <div class="feature-group">
-      <input type="checkbox" id="feature1" name="features" value="easy-to-use" />
+     <fieldset>
+  <legend>Useful Features</legend>
+  <p>Which features did you find useful in the product? (Click all that apply)</p>
+  <div class="feature-group">
+    <div class="feature-item">
+      <input type="checkbox" id="feature1" name="features" value="easy-to-use">
       <label for="feature1">Easy to Use</label>
-      <input type="checkbox" id="feature2" name="features" value="durable" />
+    </div>
+    <div class="feature-item">
+      <input type="checkbox" id="feature2" name="features" value="durable">
       <label for="feature2">Durable</label>
-      <input type="checkbox" id="feature3" name="features" value="portable" />
+    </div>
+    <div class="feature-item">
+      <input type="checkbox" id="feature3" name="features" value="portable">
       <label for="feature3">Portable</label>
-      <input type="checkbox" id="feature4" name="features" value="affordable" />
+    </div>
+    <div class="feature-item">
+      <input type="checkbox" id="feature4" name="features" value="affordable">
       <label for="feature4">Affordable</label>
-      </div>
-    </fieldset>
+    </div>
+  </div>
+</fieldset>
 
     <!-- Written Review -->
     <label for="review">Written Review (Optional)</label>
@@ -71,16 +79,16 @@
 
     <!-- User Name -->
     <label for="username">Your Name (Optional)</label>
-    <input type="text" id="username" name="username" autocomplete="name" />
+    <input type="text" id="username" name="username" autocomplete="name">
 
     <!-- Submit button -->
-    <input type="submit" value="Post Review" />
+    <input type="submit" value="Post Review">
   </form>
 
   <footer>
     <p>© 2025 Christiana Nwachukwu | Nigeria</p>
     <p id="lastModified"></p>
   </footer>
-  <script src="scripts/form.js"></script>
+  <script src="scripts/form.js" defer></script>
 </body>
 </html>

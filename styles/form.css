@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   max-width: 600px;
   margin: 20px auto;
   padding: 10px;
@@ -125,7 +125,10 @@ footer {
   text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
 }
 
-/* Style for useful features checkboxes */
+ /* Style for useful features checkboxes */
+ fieldset {
+  text-align: left;
+ }
 fieldset p {
   margin: 0 0 10px 0;
   color: #2B1C2B;
@@ -133,22 +136,35 @@ fieldset p {
 }
 
 fieldset .feature-group {
-  display: block; 
-  margin-bottom: 5px;
+  display: flex; 
+  margin-bottom: 10px;
+  align-items: left;
 }
 
 fieldset .feature-group input[type="checkbox"] {
-  margin: 0 5px 0 0;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 fieldset .feature-group label[for^="feature"] {
   margin: 0;
   color: #4A2C4A;
+  padding: 0;
+}
+.feature-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: 0;
-  display: inline;
+  margin-left: 0;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+}
+.feature-item input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 600px) {
