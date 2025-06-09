@@ -138,7 +138,7 @@ fieldset p {
 fieldset .feature-group {
   display: flex; 
   margin-bottom: 10px;
-  align-items: left;
+  align-items: flex-start;
 }
 
 fieldset .feature-group input[type="checkbox"] {
