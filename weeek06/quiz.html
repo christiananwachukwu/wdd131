@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Christiana Nwachukwu">
+        <meta name="description" content="Website designed by Christiana Nwachukwu for week06 project">
+        <title>Christie's Health Corner - A Fun Way to Learn Health</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.webp" alt="Christie's Health Corner Logo" width="150" height="auto">
+                </a>
+            </div>
+            <nav aria-label="Main Navigation">
+                <div id="menu" class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">==</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tip.html">Learning Tips</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="hero.html">Hygiene Hero</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="quiz-section">
+                <h1>Take the Health Quiz!</h1>
+                <form id="quizForm" novalidate>
+                    <div class="quiz-question">
+                        <p>How long do you wash your hands?</p>
+                        <label><input type="radio" name="q1" value="10"> 10 seconds</label>
+                        <label><input type="radio" name="q1" value="20"> 20 seconds</label>
+                        <label><input type="radio" name="q1" value="30"> 30 seconds</label>
+                    </div>
+                    <div class="quiz-question">
+                        <p>What should you eat for healthy body?</p>
+                        <label><input type="radio" name="q2" value="sweets"> Sweets</label>
+                        <label><input type="radio" name="q2" value="fruits and vegetables"> Fruits and Vegetables</label>
+                        <label><input type="radio" name="q2" value="candies"> Candies</label>
+                    </div>
+                    <div class="quiz-question">
+                        <p>How many times a day should you brush your teeth?</p>
+                        <label><input type="radio" name="q3" value="1"> 1 time</label>
+                        <label><input type="radio" name="q3" value="2"> 2 times</label>
+                        <label><input type="radio" name="q3" value="3"> 3 times</label>
+                    </div>
+                    <div class="quiz-question">
+                        <p>Which is not a good healthy habit?</p>
+                        <label><input type="radio" name="q4" value="exercising"> Exercising</label>
+                        <label><input type="radio" name="q4" value="eating junk food"> Eating junk food</label>
+                        <label><input type="radio" name="q4" value="drinking lots of water"> Drinking lots of water</label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Submit Quiz</button>
+                </form>
+                <div id="result" class="result"></div>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                    <a href="hero.html" class="btn">Check Your Hero Badges!</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 | Christiana Nwachukwu | Nigeria</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/script.js" defer></script>
+    </body>
+</html>
